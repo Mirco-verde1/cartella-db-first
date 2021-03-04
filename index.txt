@@ -1,0 +1,18 @@
+Creo un 'database' in cui verrano riportati
+i dati relativi ad un concessionario auto.
+
+Database : 'car_dealer'
+
+Tabella : 'car'
+
+           car_id         PK        BIGINT                      AUTO_INCREMENT
+           brand_name               VARCHAR(30)     NOTNULL
+           car_name                 VARCHAR(30)     NOTNULL
+           km                       MEDIUMINT       NOTNULL
+           fuel                     VARCHAR(30)     NOTNULL
+           car_frame                VARCHAR(40)     NOTNULL       UNIQUE
+           prev_owners              TINYINT         NOTNULL
+           certified_maintenance    TINYINT         NULL          DEFAULT(0)
+           purchase_price           MEDIUMINT       NOTNULL
+           selling_price            MEDIUMINT       NOTNULL
+           year                     YEAR            NOTNULL
